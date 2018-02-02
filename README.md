@@ -55,8 +55,8 @@ A Keras Cropping function was used to crop image by removing 50 and 20 pixels fr
 
 ### Training
 
-From the training efficiency point of view, a Keras fit_generator API was used to train our model with a batch size of 64. Adam optimizer with a learning rate of 1e-4 was used for back propagation.
+From the training efficiency point of view, a Keras fit_generator API was used to train our model with a batch size of 64. Adam optimizer with a learning rate of 1e-4 was used for back propagation. The optimization score function (loss function) is Mean Squared Error. And training epoch is set to 4.
 
-## Results
+## Conclusions
 ---
 
