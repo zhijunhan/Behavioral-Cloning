@@ -35,11 +35,13 @@ The following steps summarize the data processing:
 
 #### 1. Random Flip
 
-Randomly flip image and respective angle data when steering angle magnitude is larger than 0.25
+Randomly flip image and associate steering angles at a chance of 50%
 
 #### 2. Data Augmentation
 
-For each sampling step, the set of center, left and right camera data are both processed.
+Apply image transformation function, the function warpAffine transforms the source image using the specified matrix using the following math:
+
+dst(x,y) = src(M11 * x + M12 * y + M13, M21 * x + M22 * y + M23)
 
 #### 3. Color Adjust
 
