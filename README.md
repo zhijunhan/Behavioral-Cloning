@@ -21,7 +21,9 @@ Following libraries and utilities are used for this project:
 
 The project model was suggested from Udacity instructions, it is based on a well known self-driving car model, [NVIDIA model](https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf). The following picture should provide a description of its architecture.
 
+<img src="./images/NVIDIA.png?raw=true" width="400px">
 
+Note that the input data shape is `(160, 320, 3)`, cropping function is applied.
 
 The model architecture used in this project specifically has five convolutional and maxpooling layers with feature depth of (24, 36, 48) and three fully connected layers with depth of (1164, 100, 50) and one output layer, all layers have relu activation method. Dropout was used for each of the fully connected layers.
 
@@ -59,6 +61,6 @@ A Keras Cropping function was used to crop image by removing 50 and 20 pixels fr
 
 From the training efficiency point of view, a Keras fit_generator API was used to train our model with a batch size of 64. Adam optimizer with a learning rate of 1e-4 was used for back propagation. The optimization score function (loss function) is Mean Squared Error. And training epoch is set to 4.
 
-## Conclusions
+## Conclusions and Results
 ---
 
