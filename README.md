@@ -21,7 +21,7 @@ Following libraries and utilities are used for this project:
 
 The project model was suggested from Udacity instructions, it is based on a well known self-driving car model, [NVIDIA model](https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf). The following picture should provide a description of its architecture.
 
-![alt text](https://github.com/zhijunhan/Behavioral-Cloning/blob/master/images/NVIDIA.png)
+<img width="474" alt="screen shot 2018-02-03 at 01 25 45" src="https://user-images.githubusercontent.com/21351949/35763769-426fd35c-0881-11e8-92a8-200bfbc77f71.png">
 
 Note that the input data shape is `(160, 320, 3)`, cropping function is applied.
 
