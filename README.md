@@ -49,11 +49,7 @@ Apply image transformation function, the function warpAffine transforms the sour
 dst(x,y) = src(M11 * x + M12 * y + M13, M21 * x + M22 * y + M23)
 ```
 
-#### 3. Color Adjust
-
-Image converted from RGB to YUV color space, as suggested by NVIDIA paper.
-
-#### 4. Data Cropping
+#### 3. Data Cropping
 
 A Keras Cropping function was used to crop image by removing 50 and 20 pixels from top and bottom.
 
