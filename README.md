@@ -17,9 +17,11 @@ Following libraries and utilities are used for this project:
 
 ## Project Implementation
 ---
-### MOdel Architecture
+### Model Architecture
 
 The project model was suggested from Udacity instructions, it is based on a well known self-driving car model, [NVIDIA model](https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf). The following picture should provide a description of its architecture.
+
+
 
 The model architecture used in this project specifically has five convolutional and maxpooling layers with feature depth of (24, 36, 48) and three fully connected layers with depth of (1164, 100, 50) and one output layer, all layers have relu activation method. Dropout was used for each of the fully connected layers.
 
