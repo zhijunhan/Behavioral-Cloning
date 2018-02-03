@@ -61,8 +61,6 @@ From the training efficiency point of view, a Keras fit_generator API was used t
 ---
 The trained car is capable of driving along the middle of the road on the training track endlessly. Following plot shows the training and validation loss for each epoch of the model.
 
-![alt text](https://github.com/zhijunhan/Behavioral-Cloning/images/loss.png) 
-
-Behavioral-Cloning/images/loss.png
+![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/loss.png
 
 It is very clear that this self-driving car is a very basic example just for demonstration. However, it should present a good idea of what the whole process has been capable of, give the fact that the training is so limited that the data are acquired using only on a car driving simulator.
