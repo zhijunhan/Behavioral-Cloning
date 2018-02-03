@@ -55,8 +55,10 @@ A Keras Cropping function was used to crop image by removing 50 and 20 pixels fr
 
 ### Training
 
-From the training efficiency point of view, a Keras fit_generator API was used to train our model with a batch size of 64. Adam optimizer with a learning rate of 1e-4 was used for back propagation. The optimization score function (loss function) is Mean Squared Error. And training epoch is set to 4.
+From the training efficiency point of view, a Keras fit_generator API was used to train our model with a batch size of 64. Adam optimizer with a learning rate of 1e-4 was used for back propagation. The optimization score function (loss function) is Mean Squared Error. And training epoch is set to 2.
 
 ## Conclusions and Results
 ---
+The trained car is capable of driving along the middle of the road on the training track endlessly. 
 
+It is very clear that this self-driving car is a very basic example just for demonstration. However, it should present a good idea of what the whole process has been capable of, give the fact that the training is so limited that the data are acquired using only on a car driving simulator.
