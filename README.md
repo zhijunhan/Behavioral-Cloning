@@ -33,23 +33,19 @@ The Car Simulator is used to acquire road image and steering angle data. For eac
 
 The following steps summarize the data processing:
 
-#### Random Flip
+#### 1. Random Flip
 
 Randomly flip image and respective angle data when steering angle magnitude is larger than 0.25
 
-#### Adjust Brightness
-
-Image brightness was brought up.
-
-#### Data Augmentation
+#### 2. Data Augmentation
 
 For each sampling step, the set of center, left and right camera data are both processed.
 
-#### Color Adjust
+#### 3. Color Adjust
 
 Image converted from RGB to YUV color space, as suggested by NVIDIA paper.
 
-#### Data Cropping
+#### 4. Data Cropping
 
 A Keras Cropping function was used to crop image by removing 50 and 20 pixels from top and bottom.
 
