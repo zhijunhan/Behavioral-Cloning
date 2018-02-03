@@ -21,7 +21,7 @@ Following libraries and utilities are used for this project:
 
 The project model was suggested from Udacity instructions, it is based on a well known self-driving car model, [NVIDIA model](https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf). The following picture should provide a description of its architecture.
 
-<img src="./images/NVIDIA.png?raw=true" width="400px">
+<img src="images/NVIDIA.png?raw=true" width="400px">
 
 Note that the input data shape is `(160, 320, 3)`, cropping function is applied.
 
