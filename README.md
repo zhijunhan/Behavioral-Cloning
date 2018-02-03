@@ -43,7 +43,9 @@ Randomly flip image and associate steering angles at a chance of 50%
 
 Apply image transformation function, the function warpAffine transforms the source image using the specified matrix using the following math:
 
+'''
 dst(x,y) = src(M11 * x + M12 * y + M13, M21 * x + M22 * y + M23)
+'''
 
 #### 3. Color Adjust
 
