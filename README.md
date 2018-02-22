@@ -25,9 +25,9 @@ The project model was suggested from Udacity instructions, it is based on a well
 
 Note that the input data shape is `(160, 320, 3)`, cropping function is applied.
 
-The model architecture used in this project specifically has five convolutional and maxpooling layers with feature depth of (24, 36, 48) and three fully connected layers with depth of (1164, 100, 50) and one output layer, all layers have relu activation method. Dropout was used for each of the fully connected layers.
+The model architecture used in this project specifically has five convolutional and maxpooling layers with feature depth of (24, 36, 48) and three fully connected layers with depth of (1164, 100, 50) and one output layer, all layers have relu activation method.
 
-Image normalization was implemented using a Keras Lambda function, and image data are cropped using a Keras Cropping function. The paper does not address any activation method or model overfitting mitigation, so a typical relu activation functions on each fully connected and convolutional layer are used. The dropout function with a keep probability of 0.5 between each of fully connected layer was used. 
+Image normalization was implemented using a Keras Lambda function, and image data are cropped using a Keras Cropping function. The paper does not address any activation method or model overfitting mitigation, so a typical relu activation functions on each fully connected and convolutional layer are used.
 
 ### Data Collection
 
