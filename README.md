@@ -29,6 +29,46 @@ The model architecture used in this project specifically has five convolutional 
 
 Image normalization was implemented using a Keras Lambda function, and image data are cropped using a Keras Cropping function. The paper does not address any activation method or model overfitting mitigation, so a typical relu activation functions on each fully connected and convolutional layer are used.
 
+Here is the model architecture schematic:
+
+Layer (type)                     Output Shape          Param #     Connected to                     
+____________________________________________________________________________________________________
+lambda_1 (Lambda)                (None, 160, 320, 3)   0           lambda_input_1[0][0]             
+
+cropping2d_1 (Cropping2D)        (None, 90, 320, 3)    0           lambda_1[0][0]                   
+
+convolution2d_1 (Convolution2D)  (None, 45, 160, 24)   1824        cropping2d_1[0][0]               
+
+maxpooling2d_1 (MaxPooling2D)    (None, 44, 159, 24)   0           convolution2d_1[0][0]            
+
+convolution2d_2 (Convolution2D)  (None, 22, 80, 36)    21636       maxpooling2d_1[0][0]             
+
+maxpooling2d_2 (MaxPooling2D)    (None, 21, 79, 36)    0           convolution2d_2[0][0]            
+
+convolution2d_3 (Convolution2D)  (None, 11, 40, 48)    43248       maxpooling2d_2[0][0]             
+
+maxpooling2d_3 (MaxPooling2D)    (None, 10, 39, 48)    0           convolution2d_3[0][0]            
+
+convolution2d_4 (Convolution2D)  (None, 10, 39, 64)    27712       maxpooling2d_3[0][0]             
+
+maxpooling2d_4 (MaxPooling2D)    (None, 9, 38, 64)     0           convolution2d_4[0][0]            
+
+convolution2d_5 (Convolution2D)  (None, 9, 38, 64)     36928       maxpooling2d_4[0][0]             
+
+maxpooling2d_5 (MaxPooling2D)    (None, 8, 37, 64)     0           convolution2d_5[0][0]            
+
+flatten_1 (Flatten)              (None, 18944)         0           maxpooling2d_5[0][0]             
+
+dense_1 (Dense)                  (None, 1164)          22051980    flatten_1[0][0]                  
+
+dense_2 (Dense)                  (None, 100)           116500      dense_1[0][0]                    
+
+dense_3 (Dense)                  (None, 50)            5050        dense_2[0][0]   
+
+dense_4 (Dense)                  (None, 10)            510         dense_3[0][0]                    
+
+dense_5 (Dense)                  (None, 1)             11          dense_4[0][0]                    
+
 ### Data Collection
 
 The Car Simulator is used to acquire road image and steering angle data. For each given sampling time, a set of left, center and right camera image data would be collected.
