@@ -77,9 +77,15 @@ The Car Simulator is used to acquire road image and steering angle data. For eac
 
 The following steps summarize the data processing:
 
+#### 0. Raw images
+
+![png](images/raw_image.png)
+
 #### 1. Random Flip
 
 Randomly flip image and associate steering angles at a chance of 50%
+
+![png](images/flipped.png)
 
 #### 2. Data Augmentation
 
@@ -88,6 +94,7 @@ Apply image transformation function, the function warpAffine transforms the sour
 ```
 dst(x,y) = src(M11 * x + M12 * y + M13, M21 * x + M22 * y + M23)
 ```
+![png](images/transformed.png)
 
 #### 3. Data Cropping
 
